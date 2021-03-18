@@ -23,8 +23,11 @@ const useStyles = makeStyles((theme) => ({
 export default function Logout() {
     const classes = useStyles()
     const {value1, value2, value4} = useContext(UserDataContext)
+     // eslint-disable-next-line no-unused-vars
     const [isLogin, setIsLogin] = value1;
+    // eslint-disable-next-line no-unused-vars
     const [userName, setUserName] = value2;
+     // eslint-disable-next-line no-unused-vars
     const [balance, setBalance] = value4;
     
     const onLogout = () => {

@@ -37,6 +37,7 @@ export default function Popup() {
   const [two, setTwo] = useState(0)
   const [three, setThree] = useState(0)
   const {value3, value4} = useContext(UserDataContext)
+   // eslint-disable-next-line no-unused-vars
   const [data, setData] = value3;
   const [balance, setBalance] = value4;
 

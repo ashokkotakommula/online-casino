@@ -13,8 +13,11 @@ export default function Login() {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const {value1, value2, value4} = useContext(UserDataContext)
+   // eslint-disable-next-line no-unused-vars
   const [isLogin, setIsLogin] = value1;
+   // eslint-disable-next-line no-unused-vars
   const [userName, setUserName] = value2;
+   // eslint-disable-next-line no-unused-vars
   const [balance, setBalance] = value4;
 
   const onNameChange = (e) => {
@@ -31,6 +34,7 @@ export default function Login() {
     setBalance(10)
     localStorage.setItem("user_name", name)
     localStorage.setItem("balance", JSON.stringify(10))
+    setOpen(false);
   }
 
   const handleClickOpen = () => {
@@ -67,7 +71,7 @@ export default function Login() {
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary" onClick={onLoginUser}>
+          <Button color="primary" onClick={onLoginUser}>
             Login
           </Button>
         </DialogActions>

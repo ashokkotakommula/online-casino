@@ -29,7 +29,9 @@ export default function MenuAppBar() {
   const classes = useStyles();
   const {value1, value2, value4} = useContext(UserDataContext)
   const [isLogin, setIsLogin] = value1;
+   // eslint-disable-next-line no-unused-vars
   const [userName, setUserName] = value2;
+   // eslint-disable-next-line no-unused-vars
   const [balance, setBalance] = value4;
   
   const startGame = () => {
